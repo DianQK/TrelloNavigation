@@ -26,7 +26,7 @@ struct TrelloAnimate {
                 
                 (view.frame, view.titleLabel.frame, view.boardView.frame) = unfold ?
                     (
-                        CGRect(x: nextX, y: 0, width: ScreenWidth / 4.5, height: CGFloat(view.heightLevel) * 20.0),
+                        CGRect(x: nextX, y: 0, width: ScreenWidth / 4.5, height: CGFloat(view.heightLevel) * 20.0 + 50.0),
                         CGRect(x: ScreenWidth / 27.0, y: 10.0, width: ScreenWidth / (4.5 * 1.5), height: 25.0),
                         CGRect(x: ScreenWidth / 18.0, y: view.titleLabel.bottom + 10.0, width: ScreenWidth / 9.0, height: CGFloat(view.heightLevel) * 20.0)
                     ) : (

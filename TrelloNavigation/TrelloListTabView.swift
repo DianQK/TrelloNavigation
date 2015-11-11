@@ -39,6 +39,8 @@ class TrelloListTabView: UIScrollView {
                 next += view.width
                 view.tag = 100000 + i
                 i++
+                let tap = UITapGestureRecognizer(target: self, action: Selector("tapTab:"))
+                view.addGestureRecognizer(tap)
                 return view
             }
         }
@@ -51,8 +53,8 @@ class TrelloListTabView: UIScrollView {
             tabs.append(tabCell.titleLabel.text ?? "")
         }
         
-        let tap = UITapGestureRecognizer(target: self, action: Selector("tapTab:"))
-        addGestureRecognizer(tap)
+//        let tap = UITapGestureRecognizer(target: self, action: Selector("tapTab:"))
+//        addGestureRecognizer(tap)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -61,11 +63,20 @@ class TrelloListTabView: UIScrollView {
     
     func tapTab(tap: UITapGestureRecognizer) {
         if let didClickIndex = didClickIndex {
-            if let tag = pointForSubview(tap.locationInView(self))?.tag {
-                selectedIndex = tag - 100000
+//            if let tag = pointForSubview(tap.locationInView(self))?.tag {
+////                selectedIndex = tag - 100000
+//                didClickIndex(tag - 100000)
+//            } else {
+//                didClickIndex(selectedIndex)
+//            }
+////            didClickIndex(selectedIndex)
+            if let tag = tap.view?.tag {
+                didClickIndex(tag - 100000)
+            } else {
+                didClickIndex(selectedIndex)
             }
-            didClickIndex(selectedIndex)
         }
+        
     }
 
 }
