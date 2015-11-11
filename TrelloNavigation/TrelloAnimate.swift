@@ -38,6 +38,7 @@ struct TrelloAnimate {
                 nextX += view.width
                 
                 trelloView.listView.top = unfold ? trelloView.tabView.bottom - 90.0 : trelloView.tabView.bottom - 30.0
+                tabSelectedAnimate(trelloView.tabView)
             }
             
             }, completion: { finished in
