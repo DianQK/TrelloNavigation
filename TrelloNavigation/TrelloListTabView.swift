@@ -33,9 +33,12 @@ class TrelloListTabView: UIScrollView {
         
         let layoutViews: LayoutViews = { views in
             var next: CGFloat = 70.0
+            var i = 0
             return views.map { view in
                 view.left = next
                 next += view.width
+                view.tag = 100000 + i
+                i++
                 return view
             }
         }
@@ -58,8 +61,24 @@ class TrelloListTabView: UIScrollView {
     
     func tapTab(tap: UITapGestureRecognizer) {
         if let didClickIndex = didClickIndex {
-            didClickIndex(0)
+            if let tag = pointForSubview(tap.locationInView(self))?.tag {
+                selectedIndex = tag - 100000
+            }
+            didClickIndex(selectedIndex)
         }
     }
 
+}
+
+typealias PointForView = CGPoint -> UIView?
+
+extension UIView {
+    func pointForSubview(point: CGPoint) -> UIView? {
+        for subview in subviews {
+            if CGRectContainsPoint(subview.frame, point) {
+                return subview
+            }
+        }
+        return nil
+    }
 }

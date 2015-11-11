@@ -50,9 +50,17 @@ struct TrelloAnimate {
     static func tabSelectedAnimate(tabView: TrelloListTabView) {
         UIView.animateWithDuration(0.2, animations: {
             for (index, view) in tabView.subviews.enumerate() {
-                let view = view as! TrelloListTabItemView
+                guard let view = view as? TrelloListTabItemView else { return }
                 if tabView.selectedIndex == index {
-                    tabView.scrollRectToVisible(view.frame, animated: false)
+                    let visibleRect = CGRect(origin: tabView.contentOffset, size: CGSize(width: tabView.width, height: view.height))
+                    print("\(visibleRect) || \(view.frame)")
+                    if !CGRectContainsRect(visibleRect, view.frame) {
+                        if visibleRect.origin.x + tabView.width <= view.right {
+                            tabView.setContentOffset(CGPoint(x: view.right - tabView.width + view.width / 2.0, y: tabView.contentOffset.y), animated: false)
+                        } else if visibleRect.origin.x >= view.left {
+                            tabView.setContentOffset(CGPoint(x: view.left - view.width / 2.0, y: tabView.contentOffset.y), animated: false)
+                        }
+                    }
                     view.boardView.alpha = 1.0
                 } else {
                     view.boardView.alpha = 0.5

@@ -102,6 +102,7 @@ class TrelloView: UIView, UIScrollViewDelegate {
             TrelloAnimate.tabUnfold(self, unfold: self.isFoldedMode) { unfolded in
                 self.isFoldedMode = unfolded
             }
+            self.listView.setContentOffset(CGPoint(x: 100, y: self.listView.contentOffset.y), animated: false)
         }
     }
 
