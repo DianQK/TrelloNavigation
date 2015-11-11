@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2653AE011BF301DF00E963DE /* TrelloListSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653AE001BF301DF00E963DE /* TrelloListSectionView.swift */; };
+		266AD9661BEFA06B002E4B9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AD9651BEFA06B002E4B9D /* AppDelegate.swift */; };
+		266AD9681BEFA06C002E4B9D /* TrelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AD9671BEFA06B002E4B9D /* TrelloViewController.swift */; };
+		266AD96B1BEFA06C002E4B9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 266AD9691BEFA06C002E4B9D /* Main.storyboard */; };
+		266AD96D1BEFA06C002E4B9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 266AD96C1BEFA06C002E4B9D /* Assets.xcassets */; };
+		266AD9701BEFA06C002E4B9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 266AD96E1BEFA06C002E4B9D /* LaunchScreen.storyboard */; };
+		266AD97B1BEFA06C002E4B9D /* TrelloNavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AD97A1BEFA06C002E4B9D /* TrelloNavigationTests.swift */; };
+		266AD9861BEFA12B002E4B9D /* TrelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AD9851BEFA12B002E4B9D /* TrelloView.swift */; };
+		266AD9881BEFA4BD002E4B9D /* TrelloListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AD9871BEFA4BD002E4B9D /* TrelloListView.swift */; };
+		266AD98A1BEFA52F002E4B9D /* TrelloListTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AD9891BEFA52F002E4B9D /* TrelloListTabView.swift */; };
+		266AD98C1BEFA563002E4B9D /* TrelloListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AD98B1BEFA563002E4B9D /* TrelloListTableView.swift */; };
+		266AD98E1BF07269002E4B9D /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AD98D1BF07269002E4B9D /* UIViewExt.swift */; };
+		266AD9901BF0743B002E4B9D /* GlobalDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AD98F1BF0743B002E4B9D /* GlobalDefine.swift */; };
+		266AD9A11BF10CC9002E4B9D /* TrelloListTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AD99F1BF10CC9002E4B9D /* TrelloListTabItem.swift */; };
+		266AD9A21BF10CC9002E4B9D /* TrelloListCellItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AD9A01BF10CC9002E4B9D /* TrelloListCellItem.swift */; };
+		266AD9A41BF10CD1002E4B9D /* TrelloListTabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AD9A31BF10CD1002E4B9D /* TrelloListTabItemView.swift */; };
+		266AD9A61BF11610002E4B9D /* TrelloListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AD9A51BF11610002E4B9D /* TrelloListTableViewCell.swift */; };
+		266AD9A91BF18692002E4B9D /* TrelloListTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AD9A81BF18692002E4B9D /* TrelloListTabViewModel.swift */; };
+		266AD9AB1BF186A6002E4B9D /* TrelloListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AD9AA1BF186A6002E4B9D /* TrelloListCellViewModel.swift */; };
+		266AD9AF1BF1D633002E4B9D /* TrelloAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AD9AE1BF1D633002E4B9D /* TrelloAnimate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		266AD9771BEFA06C002E4B9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 266AD95A1BEFA06B002E4B9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 266AD9611BEFA06B002E4B9D;
+			remoteInfo = TrelloNavigation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2653AE001BF301DF00E963DE /* TrelloListSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrelloListSectionView.swift; sourceTree = "<group>"; };
+		266AD9621BEFA06B002E4B9D /* TrelloNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrelloNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		266AD9651BEFA06B002E4B9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		266AD9671BEFA06B002E4B9D /* TrelloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrelloViewController.swift; sourceTree = "<group>"; };
+		266AD96A1BEFA06C002E4B9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		266AD96C1BEFA06C002E4B9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		266AD96F1BEFA06C002E4B9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		266AD9711BEFA06C002E4B9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		266AD9761BEFA06C002E4B9D /* TrelloNavigationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrelloNavigationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		266AD97A1BEFA06C002E4B9D /* TrelloNavigationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrelloNavigationTests.swift; sourceTree = "<group>"; };
+		266AD97C1BEFA06C002E4B9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		266AD9851BEFA12B002E4B9D /* TrelloView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrelloView.swift; sourceTree = "<group>"; };
+		266AD9871BEFA4BD002E4B9D /* TrelloListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrelloListView.swift; sourceTree = "<group>"; };
+		266AD9891BEFA52F002E4B9D /* TrelloListTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrelloListTabView.swift; sourceTree = "<group>"; };
+		266AD98B1BEFA563002E4B9D /* TrelloListTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrelloListTableView.swift; sourceTree = "<group>"; };
+		266AD98D1BF07269002E4B9D /* UIViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		266AD98F1BF0743B002E4B9D /* GlobalDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalDefine.swift; sourceTree = "<group>"; };
+		266AD99F1BF10CC9002E4B9D /* TrelloListTabItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrelloListTabItem.swift; sourceTree = "<group>"; };
+		266AD9A01BF10CC9002E4B9D /* TrelloListCellItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrelloListCellItem.swift; sourceTree = "<group>"; };
+		266AD9A31BF10CD1002E4B9D /* TrelloListTabItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrelloListTabItemView.swift; sourceTree = "<group>"; };
+		266AD9A51BF11610002E4B9D /* TrelloListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrelloListTableViewCell.swift; sourceTree = "<group>"; };
+		266AD9A81BF18692002E4B9D /* TrelloListTabViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrelloListTabViewModel.swift; sourceTree = "<group>"; };
+		266AD9AA1BF186A6002E4B9D /* TrelloListCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrelloListCellViewModel.swift; sourceTree = "<group>"; };
+		266AD9AD1BF188EB002E4B9D /* Data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
+		266AD9AE1BF1D633002E4B9D /* TrelloAnimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrelloAnimate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		266AD95F1BEFA06B002E4B9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		266AD9731BEFA06C002E4B9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		266AD9591BEFA06B002E4B9D = {
+			isa = PBXGroup;
+			children = (
+				266AD9641BEFA06B002E4B9D /* TrelloNavigation */,
+				266AD9791BEFA06C002E4B9D /* TrelloNavigationTests */,
+				266AD9631BEFA06B002E4B9D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		266AD9631BEFA06B002E4B9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				266AD9621BEFA06B002E4B9D /* TrelloNavigation.app */,
+				266AD9761BEFA06C002E4B9D /* TrelloNavigationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		266AD9641BEFA06B002E4B9D /* TrelloNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				266AD9AC1BF18881002E4B9D /* Datas */,
+				266AD9A71BF1866D002E4B9D /* ViewModels */,
+				266AD99E1BF10CBC002E4B9D /* Models */,
+				266AD99D1BF10CB5002E4B9D /* Views */,
+				266AD9651BEFA06B002E4B9D /* AppDelegate.swift */,
+				266AD9671BEFA06B002E4B9D /* TrelloViewController.swift */,
+				266AD9691BEFA06C002E4B9D /* Main.storyboard */,
+				266AD9851BEFA12B002E4B9D /* TrelloView.swift */,
+				266AD9871BEFA4BD002E4B9D /* TrelloListView.swift */,
+				266AD9891BEFA52F002E4B9D /* TrelloListTabView.swift */,
+				266AD98B1BEFA563002E4B9D /* TrelloListTableView.swift */,
+				266AD96C1BEFA06C002E4B9D /* Assets.xcassets */,
+				266AD96E1BEFA06C002E4B9D /* LaunchScreen.storyboard */,
+				266AD9711BEFA06C002E4B9D /* Info.plist */,
+				266AD98D1BF07269002E4B9D /* UIViewExt.swift */,
+				266AD98F1BF0743B002E4B9D /* GlobalDefine.swift */,
+				266AD9AE1BF1D633002E4B9D /* TrelloAnimate.swift */,
+			);
+			path = TrelloNavigation;
+			sourceTree = "<group>";
+		};
+		266AD9791BEFA06C002E4B9D /* TrelloNavigationTests */ = {
+			isa = PBXGroup;
+			children = (
+				266AD97A1BEFA06C002E4B9D /* TrelloNavigationTests.swift */,
+				266AD97C1BEFA06C002E4B9D /* Info.plist */,
+			);
+			path = TrelloNavigationTests;
+			sourceTree = "<group>";
+		};
+		266AD99D1BF10CB5002E4B9D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				266AD9A31BF10CD1002E4B9D /* TrelloListTabItemView.swift */,
+				266AD9A51BF11610002E4B9D /* TrelloListTableViewCell.swift */,
+				2653AE001BF301DF00E963DE /* TrelloListSectionView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		266AD99E1BF10CBC002E4B9D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				266AD99F1BF10CC9002E4B9D /* TrelloListTabItem.swift */,
+				266AD9A01BF10CC9002E4B9D /* TrelloListCellItem.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		266AD9A71BF1866D002E4B9D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				266AD9A81BF18692002E4B9D /* TrelloListTabViewModel.swift */,
+				266AD9AA1BF186A6002E4B9D /* TrelloListCellViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		266AD9AC1BF18881002E4B9D /* Datas */ = {
+			isa = PBXGroup;
+			children = (
+				266AD9AD1BF188EB002E4B9D /* Data.json */,
+			);
+			name = Datas;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		266AD9611BEFA06B002E4B9D /* TrelloNavigation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 266AD97F1BEFA06C002E4B9D /* Build configuration list for PBXNativeTarget "TrelloNavigation" */;
+			buildPhases = (
+				266AD95E1BEFA06B002E4B9D /* Sources */,
+				266AD95F1BEFA06B002E4B9D /* Frameworks */,
+				266AD9601BEFA06B002E4B9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrelloNavigation;
+			productName = TrelloNavigation;
+			productReference = 266AD9621BEFA06B002E4B9D /* TrelloNavigation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		266AD9751BEFA06C002E4B9D /* TrelloNavigationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 266AD9821BEFA06C002E4B9D /* Build configuration list for PBXNativeTarget "TrelloNavigationTests" */;
+			buildPhases = (
+				266AD9721BEFA06C002E4B9D /* Sources */,
+				266AD9731BEFA06C002E4B9D /* Frameworks */,
+				266AD9741BEFA06C002E4B9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				266AD9781BEFA06C002E4B9D /* PBXTargetDependency */,
+			);
+			name = TrelloNavigationTests;
+			productName = TrelloNavigationTests;
+			productReference = 266AD9761BEFA06C002E4B9D /* TrelloNavigationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		266AD95A1BEFA06B002E4B9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Qing;
+				TargetAttributes = {
+					266AD9611BEFA06B002E4B9D = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = HY634B3FW2;
+					};
+					266AD9751BEFA06C002E4B9D = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = HY634B3FW2;
+						TestTargetID = 266AD9611BEFA06B002E4B9D;
+					};
+				};
+			};
+			buildConfigurationList = 266AD95D1BEFA06B002E4B9D /* Build configuration list for PBXProject "TrelloNavigation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 266AD9591BEFA06B002E4B9D;
+			productRefGroup = 266AD9631BEFA06B002E4B9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				266AD9611BEFA06B002E4B9D /* TrelloNavigation */,
+				266AD9751BEFA06C002E4B9D /* TrelloNavigationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		266AD9601BEFA06B002E4B9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				266AD9701BEFA06C002E4B9D /* LaunchScreen.storyboard in Resources */,
+				266AD96D1BEFA06C002E4B9D /* Assets.xcassets in Resources */,
+				266AD96B1BEFA06C002E4B9D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		266AD9741BEFA06C002E4B9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		266AD95E1BEFA06B002E4B9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				266AD98E1BF07269002E4B9D /* UIViewExt.swift in Sources */,
+				266AD9AF1BF1D633002E4B9D /* TrelloAnimate.swift in Sources */,
+				266AD9901BF0743B002E4B9D /* GlobalDefine.swift in Sources */,
+				266AD9AB1BF186A6002E4B9D /* TrelloListCellViewModel.swift in Sources */,
+				2653AE011BF301DF00E963DE /* TrelloListSectionView.swift in Sources */,
+				266AD98A1BEFA52F002E4B9D /* TrelloListTabView.swift in Sources */,
+				266AD98C1BEFA563002E4B9D /* TrelloListTableView.swift in Sources */,
+				266AD9A41BF10CD1002E4B9D /* TrelloListTabItemView.swift in Sources */,
+				266AD9A11BF10CC9002E4B9D /* TrelloListTabItem.swift in Sources */,
+				266AD9881BEFA4BD002E4B9D /* TrelloListView.swift in Sources */,
+				266AD9A91BF18692002E4B9D /* TrelloListTabViewModel.swift in Sources */,
+				266AD9A21BF10CC9002E4B9D /* TrelloListCellItem.swift in Sources */,
+				266AD9681BEFA06C002E4B9D /* TrelloViewController.swift in Sources */,
+				266AD9A61BF11610002E4B9D /* TrelloListTableViewCell.swift in Sources */,
+				266AD9861BEFA12B002E4B9D /* TrelloView.swift in Sources */,
+				266AD9661BEFA06B002E4B9D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		266AD9721BEFA06C002E4B9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				266AD97B1BEFA06C002E4B9D /* TrelloNavigationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		266AD9781BEFA06C002E4B9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 266AD9611BEFA06B002E4B9D /* TrelloNavigation */;
+			targetProxy = 266AD9771BEFA06C002E4B9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		266AD9691BEFA06C002E4B9D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				266AD96A1BEFA06C002E4B9D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		266AD96E1BEFA06C002E4B9D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				266AD96F1BEFA06C002E4B9D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		266AD97D1BEFA06C002E4B9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		266AD97E1BEFA06C002E4B9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		266AD9801BEFA06C002E4B9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TrelloNavigation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.dianqk.TrelloNavigation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		266AD9811BEFA06C002E4B9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TrelloNavigation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.dianqk.TrelloNavigation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		266AD9831BEFA06C002E4B9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TrelloNavigationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.dianqk.TrelloNavigationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrelloNavigation.app/TrelloNavigation";
+			};
+			name = Debug;
+		};
+		266AD9841BEFA06C002E4B9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TrelloNavigationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.dianqk.TrelloNavigationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrelloNavigation.app/TrelloNavigation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		266AD95D1BEFA06B002E4B9D /* Build configuration list for PBXProject "TrelloNavigation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				266AD97D1BEFA06C002E4B9D /* Debug */,
+				266AD97E1BEFA06C002E4B9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		266AD97F1BEFA06C002E4B9D /* Build configuration list for PBXNativeTarget "TrelloNavigation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				266AD9801BEFA06C002E4B9D /* Debug */,
+				266AD9811BEFA06C002E4B9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		266AD9821BEFA06C002E4B9D /* Build configuration list for PBXNativeTarget "TrelloNavigationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				266AD9831BEFA06C002E4B9D /* Debug */,
+				266AD9841BEFA06C002E4B9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 266AD95A1BEFA06B002E4B9D /* Project object */;
+}
