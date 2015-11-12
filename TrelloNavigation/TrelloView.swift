@@ -91,7 +91,7 @@ class TrelloView: UIView, UIScrollViewDelegate {
         if scrollView == listView {
             let x = scrollView.contentOffset.x
             let width = ScreenWidth - 45.0
-            if x % width == 0 {
+            if x != 0 && x % width == 0 {
                 tabView.selectedIndex = Int(x / width)
             }
         }
@@ -105,7 +105,11 @@ class TrelloView: UIView, UIScrollViewDelegate {
             TrelloAnimate.tabUnfold(self, unfold: self.isFoldedMode) { unfolded in
                 self.isFoldedMode = unfolded
             }
-//            self.listView.setContentOffset(CGPoint(x: 100, y: self.listView.contentOffset.y), animated: false)
+            let selectTableView = self.tableViews[self.tabView.selectedIndex]
+            let sepX_2 = (self.listView.width - selectTableView.width) / 2.0
+            
+            let offsetX = selectTableView.left - sepX_2
+            self.listView.setContentOffset(CGPoint(x: offsetX, y: self.listView.contentOffset.y), animated: true)
         }
     }
 

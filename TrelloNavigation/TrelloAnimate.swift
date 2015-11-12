@@ -42,7 +42,6 @@ struct TrelloAnimate {
             }
             
             }, completion: { finished in
-                trelloView.listView.isFoldMode = false
                 trelloView.isFoldedMode = false
                 finish(!unfold)
         })
@@ -54,7 +53,6 @@ struct TrelloAnimate {
                 guard let view = view as? TrelloListTabItemView else { return }
                 if tabView.selectedIndex == index {
                     let visibleRect = CGRect(origin: tabView.contentOffset, size: CGSize(width: tabView.width, height: view.height))
-                    print("\(visibleRect) || \(view.frame)")
                     if !CGRectContainsRect(visibleRect, view.frame) {
                         if visibleRect.origin.x + tabView.width <= view.right {
                             tabView.setContentOffset(CGPoint(x: view.right - tabView.width + view.width / 2.0, y: tabView.contentOffset.y), animated: false)

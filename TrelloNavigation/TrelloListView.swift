@@ -12,7 +12,6 @@ typealias TrelloListCells = TrelloCells
 
 class TrelloListView: UIScrollView {
     
-    var isFoldMode = false
     var listCount: Int
     var headerDidFolded: HeaderDidFolded?
 
