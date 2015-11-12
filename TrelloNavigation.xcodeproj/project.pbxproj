@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		264E9CEA1BF4352600F9916E /* TrelloFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264E9CE91BF4352600F9916E /* TrelloFunction.swift */; };
 		2653AE011BF301DF00E963DE /* TrelloListSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653AE001BF301DF00E963DE /* TrelloListSectionView.swift */; };
 		266AD9661BEFA06B002E4B9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AD9651BEFA06B002E4B9D /* AppDelegate.swift */; };
 		266AD9681BEFA06C002E4B9D /* TrelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AD9671BEFA06B002E4B9D /* TrelloViewController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		264E9CE91BF4352600F9916E /* TrelloFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrelloFunction.swift; sourceTree = "<group>"; };
 		2653AE001BF301DF00E963DE /* TrelloListSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrelloListSectionView.swift; sourceTree = "<group>"; };
 		266AD9621BEFA06B002E4B9D /* TrelloNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrelloNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		266AD9651BEFA06B002E4B9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				266AD98D1BF07269002E4B9D /* UIViewExt.swift */,
 				266AD98F1BF0743B002E4B9D /* TrelloDefine.swift */,
 				266AD9AE1BF1D633002E4B9D /* TrelloAnimate.swift */,
+				264E9CE91BF4352600F9916E /* TrelloFunction.swift */,
 			);
 			name = TrelloView;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				266AD9AF1BF1D633002E4B9D /* TrelloAnimate.swift in Sources */,
 				266AD9901BF0743B002E4B9D /* TrelloDefine.swift in Sources */,
 				266AD9AB1BF186A6002E4B9D /* TrelloListCellViewModel.swift in Sources */,
+				264E9CEA1BF4352600F9916E /* TrelloFunction.swift in Sources */,
 				2653AE011BF301DF00E963DE /* TrelloListSectionView.swift in Sources */,
 				266AD98A1BEFA52F002E4B9D /* TrelloListTabView.swift in Sources */,
 				266AD98C1BEFA563002E4B9D /* TrelloListTableView.swift in Sources */,

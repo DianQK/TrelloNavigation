@@ -20,11 +20,14 @@ class TrelloListSectionView: UIView {
     
     override func drawRect(rect: CGRect) {
         super.drawRect(rect)
-        // TODO: 尝试函数式编程
+        
         let path = UIBezierPath()
-        path.moveToPoint(CGPoint(x: 20, y: 20))
-        path.addLineToPoint(CGPoint(x: 50, y: 20))
-        path.stroke()
+        path.addSquare(center: CGPoint(x: 15, y: 10), width: 5.0)
+        path.addSquare(center: CGPoint(x: 15, y: 15), width: 5.0)
+        path.addSquare(center: CGPoint(x: 15, y: 20), width: 5.0)
+        TrelloLightGray.setFill()
+        path.fill()
+
     }
 
     override init(frame: CGRect) {
@@ -49,3 +52,5 @@ class TrelloListSectionView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 }
+
+
