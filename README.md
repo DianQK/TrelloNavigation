@@ -6,6 +6,8 @@
 
 ## Preview
 
+![](https://raw.githubusercontent.com/DianQK/TrelloNavigation/master/Preview/demo.gif)
+
 ## Environment
 
 * Xcode 7.1 +
