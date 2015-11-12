@@ -39,12 +39,13 @@ class TrelloViewController: UIViewController {
                 guard let tableView = tableView as? TrelloListTableView<TrelloListCellItem> else { return }
                 tableView.registerClass(TrelloListTableViewCell.self, forCellReuseIdentifier: reuseIdentifier)
                 tableView.tab = trelloView.tabs[i]
+                tableView.listItems = TrelloData.data[i]
                 i++
-                tableView.listItems = [
-                    // Set Data or Model For Cell
-                    TrelloListCellItem(image: UIImage(named: "testImage1"), content: "He", type: .Green),
-                    TrelloListCellItem(image: nil, content: "HEHEHE", type: .Green)
-                ]
+//                    [
+//                    // Set Data or Model For Cell
+//                    TrelloListCellItem(image: UIImage(named: "testImage1"), content: "He", type: .Green),
+//                    TrelloListCellItem(image: nil, content: "HEHEHE", type: .Green)
+//                ]
             }
         }
     }

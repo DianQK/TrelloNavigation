@@ -54,7 +54,7 @@ class TrelloView: UIView, UIScrollViewDelegate {
         
         for i in 0..<tabCount {
             let x: CGFloat = CGFloat(i) * (ScreenWidth - 60.0 + 15.0)
-            let tableView = TrelloListTableView<TrelloListCellItem>(frame: CGRect(x: x, y: 0, width: ScreenWidth - 60.0, height: height))
+            let tableView = TrelloListTableView<TrelloListCellItem>(frame: CGRect(x: x, y: 0, width: ScreenWidth - 60.0, height: listView.height - 80.0))
 //            在这里设置 delegate 和 dataSource 是没有卵用的
 //            tableView.delegate = delegate
 //            tableView.dataSource = dataSource
