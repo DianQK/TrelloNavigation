@@ -15,6 +15,18 @@
 
 API 和 代码结构和 SCTrelloNavigation 有一定区别，定制化好一些，所以使用的时候代码写的会多一些~但使用起来仍然是 Easy Easy Easy，就像使用 UITableView 。
 
+### CocoaPods
+
+```
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+pod 'TrelloNavigation', '~> 0.9.1'˘
+```
+
+> 注意：使用 CocoaPods 可能会出现一些问题，稍后就会解决，目前 Busying 、、、:] ，感谢理解
+
 ### 初始化
 
 ```Swift
