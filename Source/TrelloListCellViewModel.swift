@@ -10,7 +10,7 @@ import UIKit
 
 typealias UpdateCell = [UIView] -> [UIView]
 
-struct TrelloListCellViewModel {
+public struct TrelloListCellViewModel {
     static func updateCell(item: TrelloListCellItem, cell: TrelloListTableViewCell) -> UITableViewCell {
         cell.contentLabel.text = item.content
         cell.colorIndicatorView.backgroundColor = item.type.color()

@@ -10,13 +10,13 @@ import UIKit
 
 typealias HeaderDidFolded = (Bool) -> Void
 
-class TrelloListTableView<T>: UITableView {
+public class TrelloListTableView<T>: UITableView {
     
     var listItems: [T]?
     var headerDidFolded: HeaderDidFolded?
     var tab: String?
     
-    override var contentOffset: CGPoint {
+    override public var contentOffset: CGPoint {
         willSet {
             if contentOffset.y != 0 {
                 headerDidFolded?(contentOffset.y > 0)
@@ -36,7 +36,7 @@ class TrelloListTableView<T>: UITableView {
         tableFooterView = footerView
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

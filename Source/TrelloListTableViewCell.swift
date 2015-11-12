@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TrelloListTableViewCell: UITableViewCell {
+public class TrelloListTableViewCell: UITableViewCell {
     
     var bgView: UIView?
     var colorIndicatorView: UIView
@@ -44,11 +44,11 @@ class TrelloListTableViewCell: UITableViewCell {
         
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         guard let item = item, bgView = bgView else { return }
         bgView.frame = CGRect(x: 10.0, y: 5.0, width: width - 20.0, height: height - 5.0)

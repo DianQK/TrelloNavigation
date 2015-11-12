@@ -10,7 +10,7 @@ import UIKit
 
 typealias TrelloCells = () -> [UIView]
 
-class TrelloView: UIView, UIScrollViewDelegate {
+public class TrelloView: UIView, UIScrollViewDelegate {
     
     var tabView: TrelloListTabView
     var listView: TrelloListView
@@ -82,12 +82,12 @@ class TrelloView: UIView, UIScrollViewDelegate {
         prepareAnimate()
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     // MARK: Delegate
-    func scrollViewDidScroll(scrollView: UIScrollView) {
+    public func scrollViewDidScroll(scrollView: UIScrollView) {
         if scrollView == listView {
             let x = scrollView.contentOffset.x
             let width = ScreenWidth - 45.0

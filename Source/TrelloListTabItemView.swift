@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TrelloListTabItemView: UIView {
+public class TrelloListTabItemView: UIView {
     
     var titleLabel: UILabel
     var boardView: UIView
@@ -38,7 +38,7 @@ class TrelloListTabItemView: UIView {
         addSubviews(titleLabel, boardView)
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     

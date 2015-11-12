@@ -10,7 +10,7 @@ import UIKit
 
 typealias TrelloListCells = TrelloCells
 
-class TrelloListView: UIScrollView {
+public class TrelloListView: UIScrollView {
     
     var listCount: Int
     var headerDidFolded: HeaderDidFolded?
@@ -23,7 +23,7 @@ class TrelloListView: UIScrollView {
         contentOffset = CGPoint(x: 0, y: 0)
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     

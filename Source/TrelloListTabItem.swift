@@ -17,7 +17,7 @@ public struct TrelloListTabItem {
         self.heightLevel = 0
     }
     
-    init(title: String, heightLevel: Int) {
+    public init(title: String, heightLevel: Int) {
         self.title = title
         self.heightLevel = heightLevel
     }

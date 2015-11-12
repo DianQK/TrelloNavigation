@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct TrelloListTabViewModel {
+public struct TrelloListTabViewModel {
     static func tabView(title: String, level: Int) -> TrelloListTabItemView {
         let tabItem = TrelloListTabItem(title: title, heightLevel: level)
         let tabView = TrelloListTabItemView(item: tabItem)

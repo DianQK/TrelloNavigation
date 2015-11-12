@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum TrelloCellItemType: Int {
+public enum TrelloCellItemType: Int {
     case Green = 0
     case Orange
     case Red

@@ -12,7 +12,7 @@ typealias TrelloTabCells = TrelloCells
 typealias LayoutViews = [UIView] -> [UIView]
 typealias ClickIndex = Int -> ()
 
-class TrelloListTabView: UIScrollView {
+public class TrelloListTabView: UIScrollView {
     
     var didClickIndex: ClickIndex?
     var tabs: [String] = []
@@ -53,7 +53,7 @@ class TrelloListTabView: UIScrollView {
         addGestureRecognizer(tap)
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     

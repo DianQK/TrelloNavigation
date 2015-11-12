@@ -8,9 +8,9 @@
 
 import UIKit
 
-public let ScreenWidth = UIScreen.mainScreen().bounds.size.width
+let ScreenWidth = UIScreen.mainScreen().bounds.size.width
 
-public let ScreenHeight = UIScreen.mainScreen().bounds.size.height
+let ScreenHeight = UIScreen.mainScreen().bounds.size.height
 
 public let TrelloBlue = UIColor(red: 0/255.0, green: 124.0/255.0, blue: 194.0/255.0, alpha: 1.0)
 

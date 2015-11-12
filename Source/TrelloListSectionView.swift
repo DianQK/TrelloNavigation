@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TrelloListSectionView: UIView {
+public class TrelloListSectionView: UIView {
     
     private var titleLabel: UILabel
     
@@ -18,7 +18,7 @@ class TrelloListSectionView: UIView {
         }
     }
     
-    override func drawRect(rect: CGRect) {
+    override public func drawRect(rect: CGRect) {
         super.drawRect(rect)
         
         let path = UIBezierPath()
@@ -30,7 +30,7 @@ class TrelloListSectionView: UIView {
 
     }
 
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         titleLabel = UILabel(frame: CGRect(x: 50.0, y: 20.0, width: frame.size.width - 60.0, height: 20.0))
         titleLabel.textColor = TrelloLightGray
         titleLabel.font = UIFont.boldSystemFontOfSize(14.0)
@@ -48,7 +48,7 @@ class TrelloListSectionView: UIView {
         
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
