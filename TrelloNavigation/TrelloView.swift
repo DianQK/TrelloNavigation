@@ -100,12 +100,10 @@ class TrelloView: UIView, UIScrollViewDelegate {
     func prepareAnimate() {
         tabView.didClickIndex = { index in
             if !self.isFoldedMode {
-//                self.listView.delegate = nil
                 self.tabView.selectedIndex = index
             }
             TrelloAnimate.tabUnfold(self, unfold: self.isFoldedMode) { unfolded in
                 self.isFoldedMode = unfolded
-//                self.listView.delegate = self
             }
             
             let offsetX = (ScreenWidth - 45.0) * CGFloat(self.tabView.selectedIndex)
