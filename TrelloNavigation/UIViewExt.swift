@@ -8,6 +8,8 @@
 
 import UIKit
 
+typealias PointForView = CGPoint -> UIView?
+
 extension UIView {
     public func addSubviews(views: UIView...) {
         for view in views {
@@ -156,5 +158,14 @@ extension UIView {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return image
+    }
+    
+    func pointForSubview(point: CGPoint) -> UIView? {
+        for subview in subviews {
+            if CGRectContainsPoint(subview.frame, point) {
+                return subview
+            }
+        }
+        return nil
     }
 }
