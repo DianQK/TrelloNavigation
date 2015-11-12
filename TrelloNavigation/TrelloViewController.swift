@@ -42,8 +42,8 @@ class TrelloViewController: UIViewController {
                 i++
                 tableView.listItems = [
                     // Set Data or Model For Cell
-                    TrelloListCellItem(image: UIImage(named: "testImage1"), content: "He", type: .SCTrelloCellItemGreen),
-                    TrelloListCellItem(image: nil, content: "HEHEHE", type: .SCTrelloCellItemGreen)
+                    TrelloListCellItem(image: UIImage(named: "testImage1"), content: "He", type: .Green),
+                    TrelloListCellItem(image: nil, content: "HEHEHE", type: .Green)
                 ]
             }
         }

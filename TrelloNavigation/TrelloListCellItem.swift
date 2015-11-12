@@ -8,40 +8,40 @@
 
 import UIKit
 
-enum SCTrelloCellItemType: Int {
-    case SCTrelloCellItemGreen = 0
-    case SCTrelloCellItemOrange
-    case SCTrelloCellItemRed
-    case SCTrelloCellItemYellow
-    case SCTrelloCellItemYellowAndOrange
+enum TrelloCellItemType: Int {
+    case Green = 0
+    case Orange
+    case Red
+    case Yellow
+    case YellowAndOrange
     
     func color() -> UIColor {
         switch self {
-        case .SCTrelloCellItemGreen:
+        case .Green:
             return UIColor(red: 0, green: 100.0/255.0, blue: 0, alpha: 1.0)
-        case .SCTrelloCellItemOrange:
+        case .Orange:
             return UIColor.orangeColor()
-        case .SCTrelloCellItemRed:
+        case .Red:
             return UIColor.redColor()
-        case .SCTrelloCellItemYellow:
+        case .Yellow:
             return UIColor.yellowColor()
         default :
             return UIColor(red: 0, green: 100.0/255.0, blue: 0, alpha: 1.0)
         }
     }
     
-    static func type(type: String) -> SCTrelloCellItemType {
+    static func type(type: String) -> TrelloCellItemType {
         switch type {
         case "Green":
-            return .SCTrelloCellItemGreen
+            return .Green
         case "Orange":
-            return .SCTrelloCellItemOrange
+            return .Orange
         case "Red":
-            return .SCTrelloCellItemRed
+            return .Red
         case "Yellow":
-            return .SCTrelloCellItemYellow
+            return .Yellow
         default:
-            return .SCTrelloCellItemGreen
+            return .Green
         }
     }
 }
@@ -49,15 +49,15 @@ enum SCTrelloCellItemType: Int {
 public struct TrelloListCellItem {
     var image : UIImage?
     var content : String
-    var type : SCTrelloCellItemType
+    var type : TrelloCellItemType
     
     init() {
         self.image = UIImage()
         self.content = ""
-        self.type = .SCTrelloCellItemGreen
+        self.type = .Green
     }
     
-    init(image: UIImage?, content: String, type: SCTrelloCellItemType) {
+    init(image: UIImage?, content: String, type: TrelloCellItemType) {
         self.image = image
         self.content = content
         self.type = type
