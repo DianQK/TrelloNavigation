@@ -19,7 +19,7 @@
 		266AD98A1BEFA52F002E4B9D /* TrelloListTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AD9891BEFA52F002E4B9D /* TrelloListTabView.swift */; };
 		266AD98C1BEFA563002E4B9D /* TrelloListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AD98B1BEFA563002E4B9D /* TrelloListTableView.swift */; };
 		266AD98E1BF07269002E4B9D /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AD98D1BF07269002E4B9D /* UIViewExt.swift */; };
-		266AD9901BF0743B002E4B9D /* GlobalDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AD98F1BF0743B002E4B9D /* GlobalDefine.swift */; };
+		266AD9901BF0743B002E4B9D /* TrelloDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AD98F1BF0743B002E4B9D /* TrelloDefine.swift */; };
 		266AD9A11BF10CC9002E4B9D /* TrelloListTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AD99F1BF10CC9002E4B9D /* TrelloListTabItem.swift */; };
 		266AD9A21BF10CC9002E4B9D /* TrelloListCellItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AD9A01BF10CC9002E4B9D /* TrelloListCellItem.swift */; };
 		266AD9A41BF10CD1002E4B9D /* TrelloListTabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AD9A31BF10CD1002E4B9D /* TrelloListTabItemView.swift */; };
@@ -56,7 +56,7 @@
 		266AD9891BEFA52F002E4B9D /* TrelloListTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrelloListTabView.swift; sourceTree = "<group>"; };
 		266AD98B1BEFA563002E4B9D /* TrelloListTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrelloListTableView.swift; sourceTree = "<group>"; };
 		266AD98D1BF07269002E4B9D /* UIViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
-		266AD98F1BF0743B002E4B9D /* GlobalDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalDefine.swift; sourceTree = "<group>"; };
+		266AD98F1BF0743B002E4B9D /* TrelloDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrelloDefine.swift; sourceTree = "<group>"; };
 		266AD99F1BF10CC9002E4B9D /* TrelloListTabItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrelloListTabItem.swift; sourceTree = "<group>"; };
 		266AD9A01BF10CC9002E4B9D /* TrelloListCellItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrelloListCellItem.swift; sourceTree = "<group>"; };
 		266AD9A31BF10CD1002E4B9D /* TrelloListTabItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrelloListTabItemView.swift; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 				266AD96E1BEFA06C002E4B9D /* LaunchScreen.storyboard */,
 				266AD9711BEFA06C002E4B9D /* Info.plist */,
 				266AD98D1BF07269002E4B9D /* UIViewExt.swift */,
-				266AD98F1BF0743B002E4B9D /* GlobalDefine.swift */,
+				266AD98F1BF0743B002E4B9D /* TrelloDefine.swift */,
 				266AD9AE1BF1D633002E4B9D /* TrelloAnimate.swift */,
 			);
 			path = TrelloNavigation;
@@ -277,7 +277,7 @@
 			files = (
 				266AD98E1BF07269002E4B9D /* UIViewExt.swift in Sources */,
 				266AD9AF1BF1D633002E4B9D /* TrelloAnimate.swift in Sources */,
-				266AD9901BF0743B002E4B9D /* GlobalDefine.swift in Sources */,
+				266AD9901BF0743B002E4B9D /* TrelloDefine.swift in Sources */,
 				266AD9AB1BF186A6002E4B9D /* TrelloListCellViewModel.swift in Sources */,
 				2653AE011BF301DF00E963DE /* TrelloListSectionView.swift in Sources */,
 				266AD98A1BEFA52F002E4B9D /* TrelloListTabView.swift in Sources */,
