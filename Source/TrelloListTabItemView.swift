@@ -10,9 +10,9 @@ import UIKit
 
 public class TrelloListTabItemView: UIView {
     
-    var titleLabel: UILabel
+    public var titleLabel: UILabel
+    public var heightLevel: Int
     var boardView: UIView
-    var heightLevel: Int
     
     init(var frame: CGRect = CGRectNull, item: TrelloListTabItem) {
         if CGRectIsNull(frame) {

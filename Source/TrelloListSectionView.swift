@@ -12,7 +12,7 @@ public class TrelloListSectionView: UIView {
     
     private var titleLabel: UILabel
     
-    var title: String = "" {
+    public var title: String = "" {
         didSet {
             titleLabel.text = title
         }

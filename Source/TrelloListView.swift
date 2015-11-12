@@ -8,14 +8,14 @@
 
 import UIKit
 
-typealias TrelloListCells = TrelloCells
+public typealias TrelloListCells = TrelloCells
 
 public class TrelloListView: UIScrollView {
     
-    var listCount: Int
-    var headerDidFolded: HeaderDidFolded?
+    public var listCount: Int
+    public var headerDidFolded: HeaderDidFolded?
 
-    init(frame: CGRect, index: Int = 0, listCount: Int) {
+    public init(frame: CGRect, index: Int = 0, listCount: Int) {
         self.listCount = listCount
         super.init(frame: frame)
         pagingEnabled = true

@@ -47,17 +47,17 @@ public enum TrelloCellItemType: Int {
 }
 
 public struct TrelloListCellItem {
-    var image : UIImage?
-    var content : String
-    var type : TrelloCellItemType
+    public var image : UIImage?
+    public var content : String
+    public var type : TrelloCellItemType
     
-    init() {
+    public init() {
         self.image = UIImage()
         self.content = ""
         self.type = .Green
     }
     
-    init(image: UIImage?, content: String, type: TrelloCellItemType) {
+    public init(image: UIImage?, content: String, type: TrelloCellItemType) {
         self.image = image
         self.content = content
         self.type = type

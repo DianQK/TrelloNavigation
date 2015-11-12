@@ -8,22 +8,22 @@
 
 import UIKit
 
-typealias TrelloTabCells = TrelloCells
-typealias LayoutViews = [UIView] -> [UIView]
-typealias ClickIndex = Int -> ()
+public typealias TrelloTabCells = TrelloCells
+public typealias LayoutViews = [UIView] -> [UIView]
+public typealias ClickIndex = Int -> ()
 
 public class TrelloListTabView: UIScrollView {
     
-    var didClickIndex: ClickIndex?
-    var tabs: [String] = []
+    public var didClickIndex: ClickIndex?
+    public var tabs: [String] = []
     
-    var selectedIndex : Int = 0 {
+    public var selectedIndex : Int = 0 {
         didSet {
             TrelloAnimate.tabSelectedAnimate(self)
         }
     }
     
-    init(frame: CGRect, trelloTabCells: TrelloTabCells) {
+    public init(frame: CGRect, trelloTabCells: TrelloTabCells) {
         
         super.init(frame: frame)
         showsHorizontalScrollIndicator = false

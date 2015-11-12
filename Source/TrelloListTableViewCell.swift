@@ -14,9 +14,9 @@ public class TrelloListTableViewCell: UITableViewCell {
     var colorIndicatorView: UIView
     var contentLabel: UILabel
     var detailImageView: UIImageView
-    var item: TrelloListCellItem?
+    public var item: TrelloListCellItem?
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
 
         detailImageView = UIImageView(frame: CGRectZero)
         detailImageView.contentMode = .ScaleAspectFill

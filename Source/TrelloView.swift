@@ -8,30 +8,30 @@
 
 import UIKit
 
-typealias TrelloCells = () -> [UIView]
+public typealias TrelloCells = () -> [UIView]
 
 public class TrelloView: UIView, UIScrollViewDelegate {
     
-    var tabView: TrelloListTabView
-    var listView: TrelloListView
+    public var tabView: TrelloListTabView
+    public var listView: TrelloListView
     
-    var isFoldedMode : Bool = true
-    var tabCount: Int
+    public var isFoldedMode : Bool = true
+    public var tabCount: Int
     
-    var tabs: [String] {
+    public var tabs: [String] {
         get {
             return tabView.tabs ?? []
         }
     }
     
-    var delegate: UITableViewDelegate? {
+    public var delegate: UITableViewDelegate? {
         didSet {
             _ = tableViews.map { tableView in
                 tableView.delegate = delegate
             }
         }
     }
-    var dataSource: UITableViewDataSource? {
+    public var dataSource: UITableViewDataSource? {
         didSet {
             _ = tableViews.map { tableView in
                 tableView.dataSource = dataSource
@@ -39,9 +39,9 @@ public class TrelloView: UIView, UIScrollViewDelegate {
         }
     }
     
-    var tableViews: [UITableView] = []
+    public var tableViews: [UITableView] = []
     
-    init(frame: CGRect, tabCount: Int,trelloTabCells: TrelloTabCells) {
+    public init(frame: CGRect, tabCount: Int,trelloTabCells: TrelloTabCells) {
         self.tabCount = tabCount
         tabView = TrelloListTabView(frame: CGRect(x: 0, y: 0, width: ScreenWidth, height: 100), trelloTabCells: trelloTabCells)
         tabView.backgroundColor = TrelloBlue

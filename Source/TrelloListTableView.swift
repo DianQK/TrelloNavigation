@@ -8,13 +8,13 @@
 
 import UIKit
 
-typealias HeaderDidFolded = (Bool) -> Void
+public typealias HeaderDidFolded = (Bool) -> Void
 
 public class TrelloListTableView<T>: UITableView {
     
-    var listItems: [T]?
-    var headerDidFolded: HeaderDidFolded?
-    var tab: String?
+    public var listItems: [T]?
+    public var headerDidFolded: HeaderDidFolded?
+    public var tab: String?
     
     override public var contentOffset: CGPoint {
         willSet {
@@ -24,7 +24,7 @@ public class TrelloListTableView<T>: UITableView {
         }
     }
     
-    override init(frame: CGRect, style: UITableViewStyle) {
+    public override init(frame: CGRect, style: UITableViewStyle) {
         super.init(frame: frame, style: style)
         let footerView = UIView(frame: CGRect(x: 0, y: 0, width: width, height: 30.0))
         footerView.backgroundColor = TrelloGray
