@@ -85,6 +85,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		264E9CE81BF420E700F9916E /* TrelloView */ = {
+			isa = PBXGroup;
+			children = (
+				266AD9851BEFA12B002E4B9D /* TrelloView.swift */,
+				266AD9871BEFA4BD002E4B9D /* TrelloListView.swift */,
+				266AD9891BEFA52F002E4B9D /* TrelloListTabView.swift */,
+				266AD98B1BEFA563002E4B9D /* TrelloListTableView.swift */,
+				266AD98D1BF07269002E4B9D /* UIViewExt.swift */,
+				266AD98F1BF0743B002E4B9D /* TrelloDefine.swift */,
+				266AD9AE1BF1D633002E4B9D /* TrelloAnimate.swift */,
+			);
+			name = TrelloView;
+			sourceTree = "<group>";
+		};
 		266AD9591BEFA06B002E4B9D = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +120,7 @@
 		266AD9641BEFA06B002E4B9D /* TrelloNavigation */ = {
 			isa = PBXGroup;
 			children = (
+				264E9CE81BF420E700F9916E /* TrelloView */,
 				266AD9AC1BF18881002E4B9D /* Datas */,
 				266AD9A71BF1866D002E4B9D /* ViewModels */,
 				266AD99E1BF10CBC002E4B9D /* Models */,
@@ -113,16 +128,9 @@
 				266AD9651BEFA06B002E4B9D /* AppDelegate.swift */,
 				266AD9671BEFA06B002E4B9D /* TrelloViewController.swift */,
 				266AD9691BEFA06C002E4B9D /* Main.storyboard */,
-				266AD9851BEFA12B002E4B9D /* TrelloView.swift */,
-				266AD9871BEFA4BD002E4B9D /* TrelloListView.swift */,
-				266AD9891BEFA52F002E4B9D /* TrelloListTabView.swift */,
-				266AD98B1BEFA563002E4B9D /* TrelloListTableView.swift */,
 				266AD96C1BEFA06C002E4B9D /* Assets.xcassets */,
 				266AD96E1BEFA06C002E4B9D /* LaunchScreen.storyboard */,
 				266AD9711BEFA06C002E4B9D /* Info.plist */,
-				266AD98D1BF07269002E4B9D /* UIViewExt.swift */,
-				266AD98F1BF0743B002E4B9D /* TrelloDefine.swift */,
-				266AD9AE1BF1D633002E4B9D /* TrelloAnimate.swift */,
 			);
 			path = TrelloNavigation;
 			sourceTree = "<group>";
