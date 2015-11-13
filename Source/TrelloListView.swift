@@ -19,6 +19,8 @@ public class TrelloListView: UIScrollView {
         self.listCount = listCount
         super.init(frame: frame)
         pagingEnabled = true
+        showsHorizontalScrollIndicator = false
+        showsVerticalScrollIndicator = false
         contentSize = CGSize(width: CGFloat(listCount) * (ScreenWidth - 45.0), height: height)
         contentOffset = CGPoint(x: 0, y: 0)
     }

@@ -24,14 +24,14 @@ public class TrelloView: UIView, UIScrollViewDelegate {
         }
     }
     
-    public var delegate: UITableViewDelegate? {
+    weak public var delegate: UITableViewDelegate? {
         didSet {
             _ = tableViews.map { tableView in
                 tableView.delegate = delegate
             }
         }
     }
-    public var dataSource: UITableViewDataSource? {
+    weak public var dataSource: UITableViewDataSource? {
         didSet {
             _ = tableViews.map { tableView in
                 tableView.dataSource = dataSource
