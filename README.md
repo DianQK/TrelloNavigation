@@ -24,10 +24,8 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'TrelloNavigation', '~> 0.9.1'˘
+pod 'TrelloNavigation', '~> 0.9.2'
 ```
-
-> 注意：使用 CocoaPods 可能会出现一些问题，稍后就会解决，目前 Busying 、、、:] ，感谢理解
 
 ### 初始化
 
