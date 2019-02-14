@@ -2,7 +2,7 @@
 //  TrelloListItem.swift
 //  TrelloNavigation
 //
-//  Created by 宋宋 on 15/11/9.
+//  Created by DianQK on 15/11/9.
 //  Copyright © 2015年 Qing. All rights reserved.
 //
 

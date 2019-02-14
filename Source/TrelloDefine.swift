@@ -2,15 +2,15 @@
 //  GlobalDefine.swift
 //  TrelloNavigation
 //
-//  Created by 宋宋 on 15/11/9.
+//  Created by DianQK on 15/11/9.
 //  Copyright © 2015年 Qing. All rights reserved.
 //
 
 import UIKit
 
-let ScreenWidth = UIScreen.mainScreen().bounds.size.width
+let ScreenWidth = UIScreen.main.bounds.size.width
 
-let ScreenHeight = UIScreen.mainScreen().bounds.size.height
+let ScreenHeight = UIScreen.main.bounds.size.height
 
 public let TrelloBlue = UIColor(red: 0/255.0, green: 124.0/255.0, blue: 194.0/255.0, alpha: 1.0)
 

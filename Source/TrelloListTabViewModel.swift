@@ -2,7 +2,7 @@
 //  TrelloListTabViewModel.swift
 //  TrelloNavigation
 //
-//  Created by 宋宋 on 15/11/10.
+//  Created by DianQK on 15/11/10.
 //  Copyright © 2015年 Qing. All rights reserved.
 //
 

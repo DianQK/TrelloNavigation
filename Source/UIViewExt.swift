@@ -2,22 +2,22 @@
 //  UIViewExt.swift
 //  TrelloNavigation
 //
-//  Created by 宋宋 on 15/11/9.
+//  Created by DianQK on 15/11/9.
 //  Copyright © 2015年 Qing. All rights reserved.
 //
 
 import UIKit
 
-typealias PointForView = CGPoint -> UIView?
+typealias PointForView = (CGPoint) -> UIView?
 
 extension UIView {
-    public func addSubviews(views: UIView...) {
+    public func addSubviews(_ views: UIView...) {
         for view in views {
             addSubview(view)
         }
     }
     
-    public func addSubviews(views: [UIView]) {
+    public func addSubviews(_ views: [UIView]) {
         for view in views {
             addSubview(view)
         }
@@ -150,19 +150,9 @@ extension UIView {
         }
     }
     
-    func convertViewToImage(opaque: Bool = false) -> UIImage {
-        UIGraphicsBeginImageContextWithOptions(bounds.size, opaque, UIScreen.mainScreen().scale)
-        if let currentContext = UIGraphicsGetCurrentContext() {
-            layer.renderInContext(currentContext)
-        }
-        let image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return image
-    }
-    
     func pointForSubview(point: CGPoint) -> UIView? {
         for subview in subviews {
-            if CGRectContainsPoint(subview.frame, point) {
+            if subview.frame.contains(point) {
                 return subview
             }
         }

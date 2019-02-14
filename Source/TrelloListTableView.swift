@@ -2,7 +2,7 @@
 //  TrelloListTableView.swift
 //  TrelloNavigation
 //
-//  Created by 宋宋 on 15/11/8.
+//  Created by DianQK on 15/11/8.
 //  Copyright © 2015年 Qing. All rights reserved.
 //
 
@@ -24,14 +24,14 @@ public class TrelloListTableView<T>: UITableView {
         }
     }
     
-    public override init(frame: CGRect, style: UITableViewStyle) {
+    public override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
         let footerView = UIView(frame: CGRect(x: 0, y: 0, width: width, height: 30.0))
         footerView.backgroundColor = TrelloGray
-        let maskPath = UIBezierPath(roundedRect: footerView.bounds, byRoundingCorners: [.BottomLeft, .BottomRight], cornerRadii: CGSize(width: 5, height: 5))
+        let maskPath = UIBezierPath(roundedRect: footerView.bounds, byRoundingCorners: [.bottomLeft, .bottomRight], cornerRadii: CGSize(width: 5, height: 5))
         let maskLayer = CAShapeLayer()
         maskLayer.frame = footerView.bounds
-        maskLayer.path = maskPath.CGPath
+        maskLayer.path = maskPath.cgPath
         footerView.layer.mask = maskLayer
         tableFooterView = footerView
     }

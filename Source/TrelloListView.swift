@@ -2,7 +2,7 @@
 //  TrelloListView.swift
 //  TrelloNavigation
 //
-//  Created by 宋宋 on 15/11/8.
+//  Created by DianQK on 15/11/8.
 //  Copyright © 2015年 Qing. All rights reserved.
 //
 
@@ -18,7 +18,7 @@ public class TrelloListView: UIScrollView {
     public init(frame: CGRect, index: Int = 0, listCount: Int) {
         self.listCount = listCount
         super.init(frame: frame)
-        pagingEnabled = true
+        isPagingEnabled = true
         showsHorizontalScrollIndicator = false
         showsVerticalScrollIndicator = false
         contentSize = CGSize(width: CGFloat(listCount) * (ScreenWidth - 45.0), height: height)

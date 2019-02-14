@@ -10,7 +10,7 @@
 
 ## Environment
 
-* Xcode 7.1 +
+* Xcode 10 +
 * iOS 8 +
 
 ## Intro & Usage
@@ -24,21 +24,21 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'TrelloNavigation', '~> 0.9.2'
+pod 'TrelloNavigation', '~> 0.10.0'
 ```
 
 ### 初始化
 
-```Swift
+```swift
 trelloView = TrelloView(frame: CGRect(x: 0, y: 0, width: ScreenWidth, height: ScreenHeight), tabCount: 5, trelloTabCells: { () -> [UIView] in
-            return [
-                TrelloListTabViewModel.tabView("BACKLOG", level: 3),
-                TrelloListTabViewModel.tabView("BRIEFS", level: 5),
-                TrelloListTabViewModel.tabView("DESIGN", level: 2),
-                TrelloListTabViewModel.tabView("USER TESTING", level: 4),
-                TrelloListTabViewModel.tabView("USER TESTIN", level: 1)
-            ]
-        })
+    return [
+        TrelloListTabViewModel.tabView(title: "BACKLOG", level: 3),
+        TrelloListTabViewModel.tabView(title: "BRIEFS", level: 5),
+        TrelloListTabViewModel.tabView(title: "DESIGN", level: 2),
+        TrelloListTabViewModel.tabView(title: "USER TESTING", level: 4),
+        TrelloListTabViewModel.tabView(title: "USER TESTIN", level: 1)
+    ]
+})
 ```
 
 只需要多设置 tab 的数量和对应 tab 的 view 。

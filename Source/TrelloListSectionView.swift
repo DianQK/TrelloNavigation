@@ -2,7 +2,7 @@
 //  TrelloListSectionView.swift
 //  TrelloNavigation
 //
-//  Created by 宋宋 on 15/11/11.
+//  Created by DianQK on 15/11/11.
 //  Copyright © 2015年 Qing. All rights reserved.
 //
 
@@ -18,8 +18,8 @@ public class TrelloListSectionView: UIView {
         }
     }
     
-    override public func drawRect(rect: CGRect) {
-        super.drawRect(rect)
+    override public func draw(_ rect: CGRect) {
+        super.draw(rect)
         
         let path = UIBezierPath()
         path.addSquare(center: CGPoint(x: 15, y: 10), width: 5.0)
@@ -33,17 +33,17 @@ public class TrelloListSectionView: UIView {
     override public init(frame: CGRect) {
         titleLabel = UILabel(frame: CGRect(x: 50.0, y: 20.0, width: frame.size.width - 60.0, height: 20.0))
         titleLabel.textColor = TrelloLightGray
-        titleLabel.font = UIFont.boldSystemFontOfSize(14.0)
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 14.0)
         super.init(frame: frame)
         backgroundColor = TrelloGray
         let bottomLine = UIView(frame: CGRect(x: 0, y: height - 1.0, width: width, height: 1.0))
         bottomLine.backgroundColor = TrelloLightGray
         addSubviews(titleLabel, bottomLine)
         
-        let maskPath = UIBezierPath(roundedRect: bounds, byRoundingCorners: [.TopLeft, .TopRight], cornerRadii: CGSize(width: 5, height: 5))
+        let maskPath = UIBezierPath(roundedRect: bounds, byRoundingCorners: [.topLeft, .topRight], cornerRadii: CGSize(width: 5, height: 5))
         let maskLayer = CAShapeLayer()
         maskLayer.frame = bounds
-        maskLayer.path = maskPath.CGPath
+        maskLayer.path = maskPath.cgPath
         layer.mask = maskLayer
         
     }

@@ -2,7 +2,7 @@
 //  TrelloView.swift
 //  TrelloNavigation
 //
-//  Created by 宋宋 on 15/11/8.
+//  Created by DianQK on 15/11/8.
 //  Copyright © 2015年 Qing. All rights reserved.
 //
 
@@ -20,7 +20,7 @@ public class TrelloView: UIView, UIScrollViewDelegate {
     
     public var tabs: [String] {
         get {
-            return tabView.tabs ?? []
+            return tabView.tabs
         }
     }
     
@@ -58,16 +58,16 @@ public class TrelloView: UIView, UIScrollViewDelegate {
 //            在这里设置 delegate 和 dataSource 是没有卵用的
 //            tableView.delegate = delegate
 //            tableView.dataSource = dataSource
-            tableView.backgroundColor = UIColor.clearColor()
+            tableView.backgroundColor = UIColor.clear
             tableView.layer.cornerRadius = 5.0
             tableView.layer.masksToBounds = true
-            tableView.separatorStyle = .None
+            tableView.separatorStyle = .none
             tableView.showsHorizontalScrollIndicator = false
             tableView.showsVerticalScrollIndicator = false
             tableView.headerDidFolded = { folded in
                 if self.isFoldedMode != folded {
                     self.isFoldedMode = folded
-                    TrelloAnimate.tabUnfold(self, unfold: !folded) { unfolded in
+                    TrelloAnimate.tabUnfold(trelloView: self, unfold: !folded) { unfolded in
                         self.isFoldedMode = unfolded
                     }
                 }
@@ -87,11 +87,11 @@ public class TrelloView: UIView, UIScrollViewDelegate {
     }
     
     // MARK: Delegate
-    public func scrollViewDidScroll(scrollView: UIScrollView) {
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView == listView {
             let x = scrollView.contentOffset.x
             let width = ScreenWidth - 45.0
-            if x % width == 0 {
+            if (Int(x) % Int(width)) == 0 {
                 tabView.selectedIndex = Int(x / width)
             }
         }
@@ -102,7 +102,7 @@ public class TrelloView: UIView, UIScrollViewDelegate {
             if !self.isFoldedMode {
                 self.tabView.selectedIndex = index
             }
-            TrelloAnimate.tabUnfold(self, unfold: self.isFoldedMode) { unfolded in
+            TrelloAnimate.tabUnfold(trelloView: self, unfold: self.isFoldedMode) { unfolded in
                 self.isFoldedMode = unfolded
             }
             
