@@ -8,7 +8,6 @@
 
 import UIKit
 
-typealias Unfolded = (Bool) -> Void
 
 struct TrelloAnimate {
     static func tabUnfold(trelloView: TrelloView, unfold: Bool, finish: @escaping Unfolded) {
