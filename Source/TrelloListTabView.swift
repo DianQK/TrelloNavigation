@@ -8,9 +8,6 @@
 
 import UIKit
 
-public typealias TrelloTabCells = TrelloCells
-public typealias LayoutViews = ([UIView]) -> [UIView]
-public typealias ClickIndex = (Int) -> ()
 
 public class TrelloListTabView: UIScrollView {
     

@@ -1,5 +1,5 @@
 //
-//  UIViewExt.swift
+//  UIViewExtension.swift
 //  TrelloNavigation
 //
 //  Created by DianQK on 15/11/9.
@@ -12,15 +12,13 @@ typealias PointForView = (CGPoint) -> UIView?
 
 extension UIView {
     public func addSubviews(_ views: UIView...) {
-        for view in views {
-            addSubview(view)
-        }
+        views.forEach({self.addSubview($0)})
+       
     }
     
     public func addSubviews(_ views: [UIView]) {
-        for view in views {
-            addSubview(view)
-        }
+        views.forEach({self.addSubview($0)})
+    
     }
     
     var origin: CGPoint {

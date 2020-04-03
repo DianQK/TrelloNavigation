@@ -10,7 +10,7 @@ import UIKit
 
 /// Taste Function Programming
 // TODO: Combine CGPoint
-typealias TransformPoint = (CGPoint) -> CGPoint
+
 
 func add(x: CGFloat) -> TransformPoint {
     return { point in

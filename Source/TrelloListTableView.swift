@@ -8,7 +8,7 @@
 
 import UIKit
 
-public typealias HeaderDidFolded = (Bool) -> Void
+
 
 public class TrelloListTableView<T>: UITableView {
     

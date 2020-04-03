@@ -8,7 +8,6 @@
 
 import UIKit
 
-public typealias TrelloListCells = TrelloCells
 
 public class TrelloListView: UIScrollView {
     
